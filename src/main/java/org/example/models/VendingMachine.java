@@ -4,18 +4,18 @@ public abstract class VendingMachine {
 
     private int price;
     private String name;
-    private double calories;
+    private int calories;
     private String allergens;
 
-    public VendingMachine(int price, String name, double calories, String allergens) {
+    public VendingMachine(int price, String name, int calories, String allergens) {
         this.price = price;
         setName(name);
         setCalories(calories);
         setAllergens(allergens);
     }
 
-    String examine(){
-        return examine();
+    String examine(int price, String name, double calories, String allergens){
+        return examine(25, "ChocolateBar", 8, "Beware could be Peanuts");
     }
 
     String use(){
@@ -25,8 +25,8 @@ public abstract class VendingMachine {
 
 
 
-    public int getPrice() {
-        return price;
+    public String getPrice(int price) {
+        return String.valueOf(this.price);
     }
 
     public String getName() {
@@ -37,11 +37,11 @@ public abstract class VendingMachine {
         this.name = name;
     }
 
-    public double getCalories() {
+    public int getCalories() {
         return calories;
     }
 
-    public void setCalories(double calories) {
+    public void setCalories(int calories) {
         this.calories = calories;
     }
 
