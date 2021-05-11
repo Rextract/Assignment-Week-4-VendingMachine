@@ -1,55 +1,26 @@
 package org.example.models;
 
-public abstract class VendingMachine {
+import java.util.List;
 
-    private int price;
-    private String name;
-    private int calories;
-    private String allergens;
+public interface VendingMachine {
 
-    public VendingMachine(int price, String name, int calories, String allergens) {
-        this.price = price;
-        setName(name);
-        setCalories(calories);
-        setAllergens(allergens);
+    String REPORT_HEADER = "Sales items: ";
+
+    void addCurrency(int amount);      //amount = add the deposit pool(moneypool)
+    Product request(int productNumber);        // productNumber = buys a product
+    int endSession();                       // returns the change and resets the deposit pool
+    String getDescription(int productNumber);    // view the product description
+    int getBalance();                            //returns the deposit pool amount
+    String[] getProducts();                   // returns all products names and product numbers
+
+    static void printReports(List<VendingMachine> items){
+        for (VendingMachine item : items){
+            System.out.println(item.getReport());
+        }
     }
 
-    String examine(int price, String name, double calories, String allergens){
-        return examine(25, "ChocolateBar", 8, "Beware could be Peanuts");
+    default String getReport(){
+        return REPORT_HEADER + this.getDescription(5);
     }
 
-    String use(){
-        return use();
-    }
-
-
-
-
-    public String getPrice(int price) {
-        return String.valueOf(this.price);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getCalories() {
-        return calories;
-    }
-
-    public void setCalories(int calories) {
-        this.calories = calories;
-    }
-
-    public String getAllergens() {
-        return allergens;
-    }
-
-    public void setAllergens(String allergens) {
-        this.allergens = allergens;
-    }
 }
