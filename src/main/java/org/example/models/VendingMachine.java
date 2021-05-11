@@ -4,7 +4,7 @@ public abstract class VendingMachine {
 
     private int price;
     private String name;
-    private int calories;
+    private double calories;
     private String allergens;
 
 
