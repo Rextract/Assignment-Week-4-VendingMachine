@@ -14,6 +14,17 @@ public abstract class VendingMachine {
         setAllergens(allergens);
     }
 
+    String examine(){
+        return examine();
+    }
+
+    String use(){
+        return use();
+    }
+
+
+
+
     public int getPrice() {
         return price;
     }
