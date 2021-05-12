@@ -1,6 +1,6 @@
 package org.example.models;
 
-public abstract class Product {
+public abstract class Product implements VendingMachine{
 
     private int price;
     private String name;

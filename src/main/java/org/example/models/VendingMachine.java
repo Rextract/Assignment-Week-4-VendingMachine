@@ -20,7 +20,7 @@ public interface VendingMachine {
     }
 
     default String getReport(){
-        return REPORT_HEADER + this.getDescription(5);
+        return REPORT_HEADER;
     }
 
 }

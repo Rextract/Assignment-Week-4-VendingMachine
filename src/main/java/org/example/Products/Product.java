@@ -4,9 +4,17 @@ import org.example.models.VendingMachine;
 
 public class Product implements VendingMachine {
 
+    private String productName;
+    private int sellPrice;
+    private int buyPrice;
+    private int amount
 
-
-
+    public Product(String productName, int sellPrice, int buyPrice, int amount) {
+        this.productName = productName;
+        this.sellPrice = sellPrice;
+        this.buyPrice = buyPrice;
+        this.amount = amount;
+    }
 
     @Override
     public void addCurrency(int amount) {
