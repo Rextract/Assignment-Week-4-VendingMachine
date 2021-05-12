@@ -1,13 +1,15 @@
 package org.example.models;
 
-public abstract class Product implements VendingMachine{
+import org.example.Products.Product;
+
+public abstract class Product_info implements VendingMachine{
 
     private int price;
     private String name;
     private int calories;
     private String allergens;
 
-    public Product(int price, String name, int calories, String allergens) {
+    public Product_info(int price, String name, int calories, String allergens) {
         this.price = price;
         setName(name);
         setCalories(calories);
@@ -15,22 +17,22 @@ public abstract class Product implements VendingMachine{
     }
 
     String examine(int price, String name, double calories, String allergens){
-        return examine(25, "ChocolateBar", 8, "Beware could be Peanuts");
+        return examine(price, name, calories, allergens);
     }
 
     String use(){
         return use();
     }
 
-
-
-
-    public String getPrice(int price) {
+    public String getPrice() {
         return String.valueOf(this.price);
+    }
+    public void setPrice(int price){
+        this.price = price;
     }
 
     public String getName() {
-        return name;
+        return String.valueOf(getName());
     }
 
     public void setName(String name) {
@@ -46,10 +48,13 @@ public abstract class Product implements VendingMachine{
     }
 
     public String getAllergens() {
-        return allergens;
+        return String.valueOf(allergens);
     }
 
     public void setAllergens(String allergens) {
         this.allergens = allergens;
     }
+
 }
+
+

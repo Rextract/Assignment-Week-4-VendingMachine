@@ -7,7 +7,7 @@ public interface VendingMachine {
     String REPORT_HEADER = "Sales items: ";
 
     void addCurrency(int amount);      //amount = add the deposit pool(moneypool)
-    Product request(int productNumber);        // productNumber = buys a product
+    int request(int productNumber);        // productNumber = buys a product
     int endSession();                       // returns the change and resets the deposit pool
     String getDescription(int productNumber);    // view the product description
     int getBalance();                            //returns the deposit pool amount
@@ -20,7 +20,8 @@ public interface VendingMachine {
     }
 
     default String getReport(){
-        return REPORT_HEADER;
+        return REPORT_HEADER + getProducts() + "\n" ;
+
     }
 
 }

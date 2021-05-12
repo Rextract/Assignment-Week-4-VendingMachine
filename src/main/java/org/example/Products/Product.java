@@ -7,7 +7,7 @@ public class Product implements VendingMachine {
     private String productName;
     private int sellPrice;
     private int buyPrice;
-    private int amount
+    private int amount;
 
     public Product(String productName, int sellPrice, int buyPrice, int amount) {
         this.productName = productName;
@@ -19,30 +19,31 @@ public class Product implements VendingMachine {
     @Override
     public void addCurrency(int amount) {
 
+
     }
 
     @Override
-    public org.example.models.Product request(int productNumber) {
-        return null;
+    public int request(int productNumber) {
+        return productNumber;
     }
 
     @Override
     public int endSession() {
-        return 0;
+        return endSession();
     }
 
     @Override
     public String getDescription(int productNumber) {
-        return null;
+        return getDescription(productNumber);
     }
 
     @Override
     public int getBalance() {
-        return 0;
+        return getBalance();
     }
 
     @Override
     public String[] getProducts() {
-        return new String[0];
+        return getProducts();
     }
 }
