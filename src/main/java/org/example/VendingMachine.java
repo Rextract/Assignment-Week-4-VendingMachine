@@ -4,10 +4,12 @@ import java.util.List;
 
 public interface VendingMachine {
 
-    public int price ();
-    public String name();
-    public int calories();
-    public String allergens();
+
+
+    String examine();
+    String use();
+
+
 
 
 
