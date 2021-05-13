@@ -26,7 +26,7 @@ public class Drinks {
 
         @Override
         public String use() {
-            return null;
+            return use();
         }
 
         @Override

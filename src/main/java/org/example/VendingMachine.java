@@ -4,12 +4,14 @@ import java.util.List;
 
 public interface VendingMachine {
 
-
+    String REPORT_HEADER = "Report for product sales: ";
 
     String examine();
     String use();
 
+    static void printReports (List<VendingMachine> Products){
 
+    }
 
 
 

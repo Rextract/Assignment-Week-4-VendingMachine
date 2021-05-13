@@ -1,6 +1,7 @@
 package org.example;
 
-public abstract class Product {
+public abstract class Product implements VendingMachine {
+
 
     protected int price;
     protected String name;
