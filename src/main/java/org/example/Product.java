@@ -2,10 +2,10 @@ package org.example;
 
 public abstract class Product {
 
-    private int price;
-    private String name;
-    private int calories;
-    private String allergens;
+    protected int price;
+    protected String name;
+    protected int calories;
+    protected String allergens;
 
     public Product(int price, String name, int calories, String allergens) {
         this.price = price;
@@ -17,12 +17,12 @@ public abstract class Product {
     public String examine(int price, String name, int calories, String allergens) {
         System.out.println(price + name + calories + allergens);
         return String.valueOf(0);
-
     }
-
     public String use(){
         return use();
     }
+
+
 
     public int getPrice() {
         return price;

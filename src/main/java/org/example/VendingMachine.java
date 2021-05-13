@@ -6,6 +6,9 @@ public interface VendingMachine {
 
     String REPORT_HEADER = "Report for the sales item: ";
 
+    String examine();
+    String use();
+
 
     static void printReports(List<VendingMachine> products){
         for (VendingMachine product : products){
@@ -14,12 +17,12 @@ public interface VendingMachine {
     }
 
     default String getReport(){
-        return REPORT_HEADER;
+        return REPORT_HEADER ;
     }
 
 
 
-    void addCurrency(int amount);
+    int addCurrency(int amount);
 
     Product request(int productNumber);
 
