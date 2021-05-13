@@ -14,4 +14,14 @@ public class Drinks extends Product {
         this.calories = calories;
         this.allergens = allergens;
     }
+
+    @Override
+    protected void examine() {
+
+    }
+
+    @Override
+    protected void use() {
+
+    }
 }
