@@ -7,13 +7,10 @@ public class Drinks extends Product {
     private int calories;
     private String allergens;
 
-    public Drinks(String name, int price, int calories, String allergens) {
-        super(name, price, calories, calories, allergens);
-        this.name = name;
-        this.price = price;
-        this.calories = calories;
-        this.allergens = allergens;
+    public Drinks(String examine, int price, int calories, String allergens) {
+        super(examine, price, calories, allergens);
     }
+
 
     @Override
     protected void examine() {
