@@ -13,14 +13,16 @@ public enum Denominations {
     KR500(500),
     KR1000(1000);
 
-    private final int maxValue;
 
-    private Denominations (int maxValue){
-        this.maxValue = maxValue;
+
+    private int KRONOR;
+
+    private Denominations (int KRONOR){
+        this.KRONOR = KRONOR;
     }
 
-    public int pay(){
-        return maxValue;
+    public int getKRONOR(){
+        return KRONOR;
     }
 
 
