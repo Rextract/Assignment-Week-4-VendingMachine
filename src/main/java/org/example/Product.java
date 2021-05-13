@@ -2,17 +2,14 @@ package org.example;
 
 public abstract class Product {
 
-    private int price;
-    private String name;
-    private int calories;
-    private String allergens;
+    public String examine(int price, String name, int calories, String allergens) {
+        System.out.println(price + name + calories + allergens);
+        return 
 
-    public Product(int price, String name, int calories, String allergens) {
-        this.price = price;
-        this.name = name;
-        this.calories = calories;
-        this.allergens = allergens;
     }
+
+
+
 
 
 }
