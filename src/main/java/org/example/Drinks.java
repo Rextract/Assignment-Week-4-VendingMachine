@@ -17,6 +17,10 @@ public class Drinks extends Product {
 
     @Override
     protected void examine() {
+        String name = this.name;
+        int price = this.price;
+        int calories = this.calories;
+        String allergens = this.allergens;
 
     }
 
