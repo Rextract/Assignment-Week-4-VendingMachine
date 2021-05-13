@@ -1,6 +1,6 @@
 package org.example;
 
-public abstract class Product implements VendingMachine {
+public abstract class Product{
 
 
     protected int price;
@@ -59,5 +59,6 @@ public abstract class Product implements VendingMachine {
                 ", allergens='" + allergens + '\'' +
                 '}';
     }
+
 }
 
