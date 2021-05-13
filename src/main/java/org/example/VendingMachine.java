@@ -4,21 +4,14 @@ import java.util.List;
 
 public interface VendingMachine {
 
-    String REPORT_HEADER = "Report for the sales item: ";
+    public int price ();
+    public String name();
+    public int calories();
+    public String allergens();
 
-    String examine();
-    String use();
 
 
-    static void printReports(List<VendingMachine> products){
-        for (VendingMachine product : products){
-            System.out.println(Product.class);
-        }
-    }
 
-    default String getReport(){
-        return REPORT_HEADER ;
-    }
 
 
 
