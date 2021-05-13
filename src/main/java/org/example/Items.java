@@ -1,5 +1,5 @@
 package org.example;
-
+/*
 public enum Items {
 
     FANTA("Fanta", 25),
@@ -23,3 +23,4 @@ public enum Items {
     }
 
 }
+ */

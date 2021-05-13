@@ -7,22 +7,26 @@ public class Drinks extends Product {
     private int calories;
     private String allergens;
 
-    public Drinks(String examine, int price, int calories, String allergens) {
+    public Drinks(int examine, int price, int calories, String allergens, String name) {
         super(examine, price, calories, allergens);
+        this.name = name;
+        this.price = price;
+        this.calories = calories;
+        this.allergens = allergens;
     }
 
 
+
+
+
     @Override
-    protected void examine() {
-        String name = this.name;
-        int price = this.price;
-        int calories = this.calories;
-        String allergens = this.allergens;
+    protected String examine() {
+       return String.valueOf(0);
 
     }
 
     @Override
-    protected void use() {
-
+    protected String use() {
+        return null;
     }
 }

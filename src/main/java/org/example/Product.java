@@ -2,24 +2,20 @@ package org.example;
 
 public abstract class Product {
 
-    private String examine;
     private int price;
+    private String name;
     private int calories;
     private String allergens;
 
-
-    public Product(String examine, int price, int calories, String allergens) {
-        this.examine = examine;
+    public Product(int price, int name, int calories, String allergens) {
         this.price = price;
+        this.name = name;
         this.calories = calories;
         this.allergens = allergens;
     }
 
+    abstract String examine();
 
-
-    protected abstract void examine();
-
-    protected abstract void use();
-
+    abstract String use();
 
 }
