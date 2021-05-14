@@ -8,23 +8,19 @@ public abstract class Product {
     protected String allergens;
 
     public Product(int price, String name, int calories, String allergens) {
-        setPrice(price);
+        this.price = price;
         setName(name);
         setCalories(calories);
         setAllergens(allergens);
     }
 
-    public Product() {
 
-    }
 
     public int getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
+
 
     public String getName() {
         return name;
