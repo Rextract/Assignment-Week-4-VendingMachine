@@ -15,7 +15,14 @@ public abstract class Product implements VendingMachine{
         this.allergens = allergens;
     }
 
+    @Override
+    public String examine() {
+        return examine();
+    }
 
-
+    @Override
+    public String use() {
+        return use();
+    }
 }
 

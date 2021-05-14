@@ -11,13 +11,22 @@ public interface VendingMachine {
 
     static void printReports(List<VendingMachine> products){
         for (VendingMachine product : products){
-            System.out.println(product.getClass());
+            System.out.println(product.getReport());
         }
     }
 
-    default int
 
 
+    default String items(){
+        return examine() + use();
+    }
+
+    default String getReport(){
+        return REPORT_HEADER +
+                this.examine() + "\n" +
+                this.use() + "\n" +
+                this.items() + "\n";
+    }
 
 
 
