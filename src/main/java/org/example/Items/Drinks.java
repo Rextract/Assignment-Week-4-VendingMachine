@@ -1,14 +1,14 @@
 package org.example.Items;
 
 import org.example.Product;
+import org.example.VendingMachine;
 
 public class Drinks extends Product {
 
-    private int price = 25;
-    private String name = "Lemonade";
-    private int calories = 87;
-    private String allergens = "Traces of lemon";
-
+    private int price;
+    private String name;
+    private int calories;
+    private String allergens;
 
     public Drinks(int price, String name, int calories, String allergens) {
         super(price, name, calories, allergens);
@@ -18,39 +18,30 @@ public class Drinks extends Product {
         this.allergens = allergens;
     }
 
-    @Override
-    public String items() {
-        return super.items();
-    }
-
-    @Override
-    public String getReport() {
-        return super.getReport();
-    }
 
     @Override
     public int addCurrency(int amount) {
-        return amount * price;
+        return 0;
     }
 
     @Override
     public Product request(int productNumber) {
-        return request(productNumber);
+        return null;
     }
 
     @Override
     public int endSession() {
-        return endSession();
+        return 0;
     }
 
     @Override
     public String getDescription(int productNumber) {
-        return getDescription(productNumber);
+        return null;
     }
 
     @Override
     public int getBalance() {
-        return getBalance();
+        return 0;
     }
 
     @Override
