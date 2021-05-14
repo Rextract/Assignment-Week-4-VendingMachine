@@ -2,18 +2,24 @@ package org.example;
 
 public abstract class Product {
 
-
     protected int price;
     protected String name;
     protected int calories;
     protected String allergens;
 
+
     public Product(int price, String name, int calories, String allergens) {
         this.price = price;
-        this.name = name;
-        this.calories = calories;
-        this.allergens = allergens;
+        setName(name);
+        setCalories(calories);
+        setAllergens(allergens);
     }
+
+ //   public Product(int price, String name, int calories, String allergens){
+//        this(price, name, calories, allergens);
+//    }
+
+
 
     public int getPrice() {
         return price;
