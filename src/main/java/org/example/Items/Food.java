@@ -2,20 +2,22 @@ package org.example.Items;
 
 import org.example.Product;
 
-public class Drinks extends Product {
+public class Food extends Product {
 
-    private int price = 25;
-    private String name = "Lemonade";
-    private int calories = 87;
-    private String allergens = "Traces of lemon";
+    private int price = 55;
+    private String name = "KebabRulle";
+    private int calories = 150;
+    private String allergens = "Traces of tomato";
 
 
-    public Drinks(int price, String name, int calories, String allergens) {
+
+    public Food(int price, String name, int calories, String allergens) {
         super(price, name, calories, allergens);
         this.price = price;
         setName(name);
         setCalories(calories);
         setAllergens(allergens);
+
     }
 
     @Override

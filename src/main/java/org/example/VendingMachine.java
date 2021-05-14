@@ -9,12 +9,8 @@ public interface VendingMachine {
     String examine();
     String use();
 
-    static void printReports (List<VendingMachine> Products){
-        for (VendingMachine Product : products){
-            System.out.println(Product.getReport());
-        }
 
-    }
+
 
 
 
