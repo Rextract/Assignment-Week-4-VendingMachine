@@ -20,33 +20,4 @@ public class Food extends Product {
 
     }
 
-    @Override
-    public int addCurrency(int amount) {
-        return 55;
-    }
-
-    @Override
-    public Product request(int productNumber) {
-        return request(2);
-    }
-
-    @Override
-    public int endSession() {
-        return 55;
-    }
-
-    @Override
-    public String getDescription(int productNumber) {
-        return getDescription(2);
-    }
-
-    @Override
-    public int getBalance() {
-        return 0;
-    }
-
-    @Override
-    public String[] getProducts() {
-        return new String[0];
-    }
 }

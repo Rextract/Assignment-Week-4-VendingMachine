@@ -17,33 +17,4 @@ public class Sweets extends Product {
         this.allergens = allergens;
     }
 
-    @Override
-    public int addCurrency(int amount) {
-        return 0;
-    }
-
-    @Override
-    public Product request(int productNumber) {
-        return null;
-    }
-
-    @Override
-    public int endSession() {
-        return 0;
-    }
-
-    @Override
-    public String getDescription(int productNumber) {
-        return null;
-    }
-
-    @Override
-    public int getBalance() {
-        return 0;
-    }
-
-    @Override
-    public String[] getProducts() {
-        return new String[0];
-    }
 }
