@@ -12,10 +12,10 @@ public abstract class Product {
 
 
     public Product(int price, String name, int calories, String allergens) {
-        this.price = price;
-        this.name = name;
-        this.calories = calories;
-        this.allergens = allergens;
+        setPrice(price);
+        setName(name);
+        setCalories(calories);
+        setAllergens(allergens);
     }
 
     public int getPrice() {
