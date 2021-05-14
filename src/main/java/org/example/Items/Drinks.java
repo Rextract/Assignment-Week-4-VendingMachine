@@ -57,4 +57,44 @@ public class Drinks extends Product {
     public void setAllergens(String allergens) {
         this.allergens = allergens;
     }
+
+    @Override
+    public String examine() {
+        return null;
+    }
+
+    @Override
+    public String use() {
+        return null;
+    }
+
+    @Override
+    public int addCurrency(int amount) {
+        return 0;
+    }
+
+    @Override
+    public Product request(int productNumber) {
+        return null;
+    }
+
+    @Override
+    public int endSession() {
+        return 0;
+    }
+
+    @Override
+    public String getDescription(int productNumber) {
+        return null;
+    }
+
+    @Override
+    public int getBalance() {
+        return 0;
+    }
+
+    @Override
+    public String[] getProducts() {
+        return new String[0];
+    }
 }

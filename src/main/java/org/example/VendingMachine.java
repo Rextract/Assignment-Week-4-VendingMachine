@@ -9,9 +9,13 @@ public interface VendingMachine {
     String examine();
     String use();
 
+    static void printReports(List<VendingMachine> products){
+        for (VendingMachine product : products){
+            System.out.println(product.getClass());
+        }
+    }
 
-
-
+    default int
 
 
 
