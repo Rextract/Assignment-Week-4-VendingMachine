@@ -9,25 +9,6 @@ public interface VendingMachine {
     String examine();
     String use();
 
-    static void printReports(List<VendingMachine> products){
-        for (VendingMachine product : products){
-            System.out.println(product.getReport());
-        }
-    }
-
-
-
-    default String items(){
-        return examine() + use();
-    }
-
-    default String getReport(){
-        return REPORT_HEADER +
-                this.examine() + "\n" +
-                this.use() + "\n" +
-                this.items() + "\n";
-    }
-
 
 
 
