@@ -1,8 +1,8 @@
 package org.example;
 
-public abstract class Product {
+public interface Product {
 
-    abstract String examine();
-    abstract String use();
+    String examine();
+    String use();
 
 }
