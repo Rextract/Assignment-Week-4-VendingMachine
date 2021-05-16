@@ -12,22 +12,6 @@ public class App {
 
         Scanner SCANNER = new Scanner(System.in);
 
-        VendingMachineInterface machineInterface = null;
-
-        machineInterface.displayProducts();
-
-        String selectedProduct = SCANNER.nextLine();
-
-        machineInterface.selectProduct(Integer.parseInt(selectedProduct));
-
-
-        machineInterface.displayEnterCoinsMessage();
-
-        String userEnteredCoins = scanner.nextLine();
-        int[] enteredCoins = {};
-        machineInterface.enterCoins(enteredCoins);
-
-        machineInterface.displayChangeMessage();
 
 
     }
