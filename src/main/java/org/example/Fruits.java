@@ -2,10 +2,10 @@ package org.example;
 
 public class Fruits implements Product {
 
-    private int price = 15;
-    private String name = "Big Apple";
-    private int calories = 125;
-    private String allergens = "Has traces of Apple";
+    private int price;
+    private String name;
+    private int calories;
+    private String allergens;
 
     public Fruits(int price, String name, int calories, String allergens) {
         this.price = price;
