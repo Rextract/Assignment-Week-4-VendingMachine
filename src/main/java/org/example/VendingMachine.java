@@ -5,8 +5,9 @@ import java.util.List;
 public interface VendingMachine {
 
 
-    //abstract String examine(int price, String name, int calories, String allergens);
-    //abstract String use();
+
+    String examine(int price, String name, int calories, String allergens);
+    String use();
 
     void addCurrency(int amount);
 
