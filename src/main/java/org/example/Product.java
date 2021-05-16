@@ -5,6 +5,7 @@ public abstract class Product {
     abstract String examine();
     abstract String use();
 
+
     private int price;
     private String name;
     private int calories;

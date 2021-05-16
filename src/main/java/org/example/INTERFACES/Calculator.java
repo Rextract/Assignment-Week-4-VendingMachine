@@ -2,8 +2,8 @@ package org.example.INTERFACES;
 
 public interface Calculator {
 
-    int totalAmount (depositPool addCurrency);
-    depositPool calculateChange (int inputMoney);
+    int totalAmount (CoinBundle enteredCoins);
+     CoinBundle calculateChange (int enteredByUserMoney);
 
 
 }

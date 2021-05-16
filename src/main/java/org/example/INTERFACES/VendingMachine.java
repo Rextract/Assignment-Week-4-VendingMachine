@@ -1,5 +1,7 @@
 package org.example.INTERFACES;
 
+import org.example.Product;
+
 public interface VendingMachine {
 
     void addCurrency(int amount);

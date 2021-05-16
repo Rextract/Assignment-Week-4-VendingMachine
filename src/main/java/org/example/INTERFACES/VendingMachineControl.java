@@ -1,19 +1,21 @@
 package org.example.INTERFACES;
 
+import org.example.Product;
+
 public interface VendingMachineControl {
 
-    depositPool calculateChange (VendingMachineRequest request);
+    CoinBundle calculateChange (VendingMachineRequest request);
 
 }
 
 public class VendingMachineRequest {
 
     public Product product;
-    public depositPool addCurrency;
+    public CoinBundle enteredCoins;
 
-    public VendingMachineRequest(int product, int addCurrency) {
+    public VendingMachineRequest(int product, int enteredCoins) {
         this.product = null;
-        this.addCurrency = new depositPool(addCurrency);
+        this.enteredCoins = new CoinBundle(enteredCoins);
     }
 
 
