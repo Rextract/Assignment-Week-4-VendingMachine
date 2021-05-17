@@ -4,6 +4,8 @@ import org.example.Product;
 
 public interface VendingMachine {
 
+
+
     void addCurrency(int amount);
 
     Product request(int productNumber);
