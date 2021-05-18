@@ -1,6 +1,7 @@
 package org.example.Classes;
 
 import org.example.Classes.DepositMoneyPool.moneyPool;
+import org.example.Classes.VendingMachineClasses.VendingMachineRequest;
 import org.example.INTERFACES.Product;
 import org.example.INTERFACES.VendingMachine;
 import org.example.INTERFACES.VendingMachineControl;
@@ -12,10 +13,14 @@ public class VendingMachineText implements VendingMachine {
     private int request;
     private moneyPool change;
 
+    String[] getProducts = {"Candy", "Drinks", "Fruits"};
+
+
+
 
     @Override
     public void addCurrency(int amount) {
-
+        VendingMachineRequest request = new VendingMachineRequest(amount,
     }
 
     @Override
@@ -40,6 +45,7 @@ public class VendingMachineText implements VendingMachine {
 
     @Override
     public String[] getProducts() {
+        System.out.println(getProducts[0] + getProducts[1] + getProducts[2]);
         return new String[0];
     }
 }
