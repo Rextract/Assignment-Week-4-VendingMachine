@@ -4,10 +4,16 @@ import java.util.List;
 
 public interface Product {
 
-    Product getProduct(int price, String name, int calories, String allergens);
-    List<Product> getProducts();
+    String examine(int price, String name, int calories, String allergens);
+    List<String> examine();
 
-    String examine();
     String use();
+
+
+
+
+
+
+
 
 }
