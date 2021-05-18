@@ -11,6 +11,7 @@ public interface Product {
         for (Product product : Product.values()) {
             System.out.println(product.getReport());
         }
+        return null;
     }
 
 

@@ -20,12 +20,17 @@ public class VendingMachineText implements VendingMachine {
 
     @Override
     public void addCurrency(int amount) {
-        VendingMachineRequest request = new VendingMachineRequest(amount,
+        VendingMachineRequest request = new VendingMachineRequest(request(), amount);
+        change = control.calculateChange(request);
+    }
+
+    private int request() {
+        return request;
     }
 
     @Override
     public Product request(int productNumber) {
-        return null;
+        return Product.valueOf(productNumber);
     }
 
     @Override
@@ -35,7 +40,9 @@ public class VendingMachineText implements VendingMachine {
 
     @Override
     public String getDescription(int productNumber) {
-        return null;
+        System.out.println("  WELCOME TO THE VENDING MACHINE     ");
+        System.out.println("PRODUCTS AVAILABLE: " + getProducts.length);
+        return String.valueOf(productNumber);
     }
 
     @Override
