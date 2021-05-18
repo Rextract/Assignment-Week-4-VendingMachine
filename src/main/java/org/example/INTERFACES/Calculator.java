@@ -1,6 +1,6 @@
 package org.example.INTERFACES;
 
-import org.example.Classes.moneyPool;
+import org.example.Classes.DepositMoneyPool.moneyPool;
 
 public interface Calculator {
 

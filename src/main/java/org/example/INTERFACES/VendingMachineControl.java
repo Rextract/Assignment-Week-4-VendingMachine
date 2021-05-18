@@ -1,7 +1,7 @@
 package org.example.INTERFACES;
 
-import org.example.Classes.VendingMachineRequest;
-import org.example.Classes.moneyPool;
+import org.example.Classes.VendingMachineClasses.VendingMachineRequest;
+import org.example.Classes.DepositMoneyPool.moneyPool;
 
 public interface VendingMachineControl {
 
