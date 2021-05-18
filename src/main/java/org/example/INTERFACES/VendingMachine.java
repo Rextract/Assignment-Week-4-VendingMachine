@@ -2,6 +2,7 @@ package org.example.INTERFACES;
 
 public interface VendingMachine {
 
+
     void addCurrency(int amount);
 
     Product request (int productNumber);
