@@ -5,17 +5,20 @@ import org.example.Product;
 public interface VendingMachine {
 
 
+    void addCurrency (int amount);
 
-    void addCurrency(int amount);
+    Product request (int productNumber);
 
-    Product request(int productNumber);
+    int endSession();
 
-    int endSessions();
-
-    String getDescription(int productNumber);
+    String getDescription (int productNumber);
 
     int getBalance();
 
-    String [] getProducts();
+    String[] getProducts();
+
+
+
+
 
 }
