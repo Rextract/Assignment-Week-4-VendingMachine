@@ -1,9 +1,11 @@
 package org.example.INTERFACES;
 
+import org.example.Classes.moneyPool;
+
 public interface Calculator {
 
-    int calculateTotal (VendingMachineControl addCurrency);
-    VendingMachineControl calculateChange(int coinsInserted);
+    int calculateTotal (moneyPool addCurrency);
+    moneyPool calculateChange(int coinsInserted);
 
 
 }

@@ -1,16 +1,17 @@
 package org.example.Classes;
 
+import org.example.INTERFACES.Product;
 import org.example.INTERFACES.VendingMachineControl;
 
 public class VendingMachineRequest {
 
     public Product product;
-    public VendingMachineControl addCurrency;
+    public moneyPool addCurrency;
 
 
-    public VendingMachineRequest(int request, int... addCurrency) {
+    public VendingMachineRequest(int request, int...addCurrency) {
         this.product = Product.valueOf(request);
-        this.addCurrency = new VendingMachineControl(addCurrency);
+        this.addCurrency = new moneyPool(addCurrency);
 
 
     }
