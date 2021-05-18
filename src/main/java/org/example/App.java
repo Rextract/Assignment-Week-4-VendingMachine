@@ -1,6 +1,9 @@
 package org.example;
 
 
+import org.example.ENUM.Coins;
+import org.example.INTERFACES.VendingMachine;
+
 import java.util.Scanner;
 
 /**
@@ -9,9 +12,6 @@ import java.util.Scanner;
  */
 public class App {
     public static void main(String[] args) {
-
-        Scanner SCANNER = new Scanner(System.in);
-
 
 
 

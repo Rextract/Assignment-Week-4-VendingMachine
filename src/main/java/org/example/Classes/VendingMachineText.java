@@ -14,8 +14,7 @@ public class VendingMachineText implements VendingMachine {
     private moneyPool change;
 
     String[] getProducts = {"Candy", "Drinks", "Fruits"};
-
-
+    private int calculateTotal;
 
 
     @Override
@@ -35,7 +34,7 @@ public class VendingMachineText implements VendingMachine {
 
     @Override
     public int endSession() {
-        return 0;
+        return change.getTotal();
     }
 
     @Override
@@ -47,11 +46,11 @@ public class VendingMachineText implements VendingMachine {
 
     @Override
     public int getBalance() {
-        return 0;
+        return calculateTotal;
     }
 
     @Override
-    public String[] getProducts() {
+    public String[] getProducts(int i) {
         System.out.println(getProducts[0] + getProducts[1] + getProducts[2]);
         return new String[0];
     }

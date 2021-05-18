@@ -13,6 +13,6 @@ public interface VendingMachine {
 
     int getBalance();
 
-    String [] getProducts();
+    String [] getProducts(int i);
 
 }
